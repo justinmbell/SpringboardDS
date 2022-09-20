@@ -1,0 +1,71 @@
+Final Model Metrics
+
+Individual Player Data:
+    Final Model <-- Logistic Regression
+        Features:
+            Numerical:
+                kills <-- total kills
+                assists <-- total assists
+                deaths <-- total deaths
+                hs <-- total headshots
+                flash_assists <-- total flash assists
+                kast <-- percentage of rounds where player killed, assisted, survived, or was traded
+                kddiff <-- total kills minus deaths
+                adr <-- average damage per round
+                fkdiff <-- total first kills minus first deaths
+                kills_ct <-- total kills on CT
+                deaths_ct <-- total deaths on CT
+                kddiff_ct <-- total kills minus deaths on CT
+                adr_ct <-- average damage per round on CT
+                kast_ct <-- percentage of rounds where player killed, assisted, survived, or was traded on CT
+                kills_t <-- total kills on T
+                deaths_t <-- total deaths on T
+                kddiff_t <-- total kills minus deaths on T
+                adr_t <-- average damage per round on T
+                kast_t <-- percentage of rounds where player killed, assisted, survived, or was traded on T
+            Categorical:
+                82 Country Indicator Variables: <-- indicator for country players are from
+                    Albania, Algeria, Argentina, Australia, Austria, Azerbaijan, Bangladesh, Belarus, Belgium, Bosnia and Herzegovina, 
+                    Brazil, Brunei, Bulgaria, Cambodia, Canada, Chile, China, Colombia, Croatia, Czech Republic, Denmark, Ecuador,
+                    Estonia, Finland, France, Germany, Greece, Guatemala, Hong Kong, Hungary, Iceland, India, Indonesia, Iran, Iraq,
+                    Ireland, Israel, Italy, Japan, Jordan, Kazakhstan, Korea, Kyrgyzstan, Latvia, Lebanon, Lithuania, Macedonia, Malaysia,
+                    Mexico, Mongolia, Montenegro, Myanmar, Netherlands, New Zealand, Norway, Peru, Philippines, Poland, Portugal,
+                    Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzerland, Syria, Taiwan,
+                    Thailand, Tunisia, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States, Uruguay, Uzbekistan, Venezuela,
+                    Vietnam
+        Hyperparameters:
+            solver <-- liblinear
+            penalty <-- l1
+            C <-- 10.0
+        Performance Metrics:
+            F1-score <-- 0.946
+
+Team Player Data:
+    Final Model <-- Logistic Regression
+        Features:
+            Numerical:
+                kills <-- average total team kills
+                assists <-- average total team assists
+                deaths <-- average total team deaths
+                hs <-- average total team headshots
+                flash_assists <-- average total team flash assists
+                kast <-- average percentage of rounds where players on team killed, assisted, survived, or was traded
+                kddiff <-- average total team kills minus deaths
+                adr <-- team average damage per round
+                fkdiff <-- average total team first kills minus first deaths
+                kills_ct <-- average total team kills on CT
+                deaths_ct <-- average total team deaths on CT
+                kddiff_ct <-- average total team kills minus deaths on CT
+                adr_ct <-- team average damage per round on CT
+                kast_ct <-- average percentage of rounds where players on team killed, assisted, survived, or was traded on CT
+                kills_t <-- average total team kills on T
+                deaths_t <-- average total team deaths on T
+                kddiff_t <-- average total team kills minus deaths on T
+                adr_t <-- team average damage per round on T
+                kast_t <-- average percentage of rounds where players on team killed, assisted, survived, or was traded on T
+        Hyperparameters:
+            solver <-- liblinear
+            penalty <-- l2
+            C <-- 10.0
+        Performance Metrics:
+            F1-score <-- 0.819
