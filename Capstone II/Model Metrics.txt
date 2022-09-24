@@ -38,7 +38,8 @@ Individual Player Data:
             penalty <-- l1
             C <-- 10.0
         Performance Metrics:
-            F1-score <-- 0.946
+            F1-score (Training) <-- 0.817
+            F1-score (Test) <-- 0.82
 
 Team Player Data:
     Final Model <-- Logistic Regression
@@ -68,4 +69,5 @@ Team Player Data:
             penalty <-- l2
             C <-- 10.0
         Performance Metrics:
-            F1-score <-- 0.819
+            F1-score (Training) <-- 0.945
+            F1-score (Test) <-- 0.95
