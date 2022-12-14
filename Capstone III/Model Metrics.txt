@@ -1,0 +1,13 @@
+Final Model Metrics
+
+Imbalanced Data:
+    Final Model <-- Random Forest
+        Features:
+	    3647 Words (counts)
+        Hyperparameters:
+            n_estimators <-- 500
+            n_jobs <-- -1
+	Vectorizer:
+	    CountVectorizer
+        Performance Metrics:
+            Recall (Test) <-- 0.78
